@@ -14,3 +14,7 @@ networks:
   default:
     external: true
     name: scoobydoo
+
+volumes:
+  app_data:
+    external: true
