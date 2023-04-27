@@ -12,9 +12,8 @@ services:
       - app_data:/usr/src/app
 networks:
   default:
-    external: true
     name: scoobydoo
+    external: true
 
 volumes:
   app_data:
-    external: true

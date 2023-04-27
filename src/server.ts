@@ -12,12 +12,13 @@ app.use(cors());
 app.use(express.json());
 
 app.disable("x-powered-by");
-app.get("/health", (_, res) => {
-  res.send(true);
-});
 
 app.get("/", (_, res) => {
   res.send("Hello world !");
+});
+
+app.get("/health", (_, res) => {
+  res.send(true);
 });
 
 app.listen(port, () => {
