@@ -11,8 +11,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
 
-app.disable("x-powered-by");
-
 app.get("/", (_, res) => {
   res.send("Hello world !");
 });
