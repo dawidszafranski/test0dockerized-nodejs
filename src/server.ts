@@ -2,9 +2,11 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 
+import "./monitor";
+
 dotenv.config();
 
-const port = 80;
+const port = 8081;
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
