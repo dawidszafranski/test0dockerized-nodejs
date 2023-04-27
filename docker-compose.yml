@@ -9,7 +9,7 @@ services:
     # ports:
     #   - "8081:80"
     volumes:
-      - "app_data/test0dockerized-nodejs:/usr/src/app"
+      - app_data:/usr/src/app
 networks:
   default:
     external: true
