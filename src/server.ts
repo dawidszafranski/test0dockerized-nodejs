@@ -12,10 +12,12 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (_, res) => {
+  console.log("/");
   res.send("Hello world !");
 });
 
 app.get("/health", (_, res) => {
+  console.log("/health");
   res.send(true);
 });
 
