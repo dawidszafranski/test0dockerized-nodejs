@@ -16,6 +16,10 @@ app.get("/health", (_, res) => {
   res.send(true);
 });
 
+app.get("/", (_, res) => {
+  res.send("Hello world !");
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
