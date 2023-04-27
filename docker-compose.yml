@@ -1,9 +1,10 @@
 version: "3.8"
 services:
   app:
-    build:
-      context: "."
-      dockerfile: Dockerfile
+    build: "https://github.com/dawidszafranski/test0dockerized-nodejs.git"
+    # build:
+    #   context: "."
+    #   dockerfile: Dockerfile
     restart: unless-stopped
     ports:
       - "8081:80"
