@@ -8,6 +8,8 @@ services:
     restart: unless-stopped
     # ports:
     #   - "8081:80"
+    volumes:
+      - "./data:/usr/src/app"
 networks:
   default:
     external: true
